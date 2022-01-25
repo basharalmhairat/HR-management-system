@@ -5,8 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 
+   
+    <!-- footer {
+        position:absolute;
+        bottom:0;
+        width:100%;
+        height:60px;   /* Height of the footer */
+        background:#6cf;
+     } -->
 
+</style>
     
     <style>
          
@@ -38,6 +48,15 @@ li a:hover:not(.active) {
  background-color: #44AA6D;
 }
 </style>
+
+
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <body>
     <header>
@@ -48,12 +67,105 @@ li a:hover:not(.active) {
           </ul>
     </header>
     <main>
+      <section>
+        <h2> fill this form : </h2>
+
+        <form id="employee form">
+            <fieldset>                                                                             
+              
+              
+              
+              <legend>enter your info</legend>
+              <label for="name">fullName:</label> <br>
+              <input type="text" name="name" id="name" required />
+              <br />
+              <br />
+              <label for="imgurl">image url</label><br>
+              <input type="text" name="imgurl" id="imgurl"  />
+              <br />
+              <br />
+              <label for="department">Choose a department:</label><br>
+              <select name="department" id="departments" required >
+                <option value="Marketing">Marketing</option>
+                <option value="Development">Development</option>
+                <option value="Finance">Finance</option>
+                <option value=" Administration"> Administration</option>
+              </select>
+              <br />
+              <br />
+              <label for="level">Choose your level:</label><br>
+              <select name="level" id="level" required >
+                <option value="Junior">Junior</option>
+                <option value="Mid-Senior">Mid-Senior</option>
+                <option value=" Senior"> Senior</option>
+                <br />
+                <br />
+        <h3>if done you press submit</h3>
+              <input type="submit" value="submit" />
+            </fieldset>
+          </form>
+    </section>
 
 
-    </main>
+
+    <section>
+      <h2> </h2>
+      <div>
+          <h4></h4>
+          <p></p>
+          <ul>
+              <li>
+                
+              </li>
+              <li>
+                 
+              </li>
+          </ul>
+          <img src="" alt="">
+      </div>
+  </section>
+  <section id="handelsupmit">
+
+  </section>
+</main> 
     <footer>
-
+      <div class="row">
+            <div class="col-lg-12">
+              <ul class="mendi-social-networks">
+                <li class="facebook">
+                <a href="" title="">
+                  <i class="fa fa-facebook"> </i>
+                  <p>JOIN US ON FACEBOOK</p>
+                  <span class="followers">268K Followers</span>
+                </a>
+              </li>
+              <li class="twitter">
+                <a href="" title="">
+                  <i class="fa fa-twitter"> </i>
+                  <p>FOLLOW US ON TWITTER</p>
+                  <span class="followers">268K Followers</span>
+                </a>
+              </li>
+              <li class="googleplus">
+                <a href="" title="">
+                  <i class="fa fa-google-plus"> </i>
+                  <p>be a memper</p>
+                  <span class="followers">268K Followers</span>
+                </a>
+              </li>
+              <li class="linkedin">
+                <a href="" title="">
+                  <i class="fa fa-linkedin"> </i>
+                  <p>rate us</p>
+                  <span class="followers">268K Followers</span>
+                </a>
+              </li>
+            </ul>
+            </div>
+          </div>
+      </footer>
 
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
