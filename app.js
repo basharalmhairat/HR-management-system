@@ -68,7 +68,7 @@
             this.employeeID = employeeID;
             this.Fullname = Fullname;
             this.Department = Department;
-            this.Imageurl = `photo.jpg${this.name}.PNG`;
+            this.Imageurl = `photo.jpg/images.png`;
             this.Level = Level;
 
 
@@ -76,9 +76,19 @@
 
         form.prototype.employeeIDe = function () {
             this.employeeID = getRandomNumber(1000, 4000);
-            //    console.log(this.employeeID)
         }
 
+            // function selectDeb()
+            // {
+            //     this.Department = document.getElementById("Department").value;
+            // }
+
+
+            function selectLevel()
+            {
+                 Level = document.getElementById("Level").value;
+            }
+           
         form.prototype.render = function () {
 
             let div = document.createElement('div');
@@ -86,13 +96,13 @@
 
             let h4 = document.createElement('h4');
             div.appendChild(h4);
-            h4.textContent = this.Fullname;
+            h4.textContent = this.Level;
 
             let h5 = document.createElement('h5');
             div.appendChild(h5);
-            h4.textContent = this.Department;
+            h4.textContent = (`Hello Mr :${this.Fullname} your Department is : ${this.Department} and are in ${this.Level} level`);
 
-
+          
 
         let img = document.createElement('img');
         div.appendChild(img);
@@ -102,7 +112,7 @@
 
         let p2 = document.createElement('p');
         div.appendChild(p2);
-        p2.textContent = `employeeIDn : ${this.employeeID}`;
+        p2.textContent = `employeeID: ${this.employeeID}`;
         }
 
         function handelSubmit(event) {
@@ -113,7 +123,7 @@
             let Imageurl = event.target.Imageurl.value;
             //    console.log(`${Fullname}  ${Department}  ${Level}  ${Imageurl}`);
 
-            let newemployee = new form(Fullname, Department, Level, Imageurl);
+            let newemployee = new form(Fullname, Department,Imageurl,Level);
             newemployee.employeeIDe();
             newemployee.render();
         }
